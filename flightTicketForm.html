@@ -8,11 +8,12 @@
 		<meta name = "description" content = "Book your next flight with FunWebDev.ca">
 	</head>
 	<body style = "font-family: Comic Sans MS;">
-		<fieldset style = "width: 400px">	
-			<h1><img src = "https://image.flaticon.com/icons/svg/18/18430.svg" width = "60" height = "40"
+		<fieldset style = "width: 400px">
+			<!-- Image was taken from http://clipart-library.com/airplane-cliparts.html -->
+			<h1><img src = "http://clipart-library.com/data_images/121131.png" width = "60" height = "40"
 				alt = "Air plane image" align = "left"/>FunWebDev.ca</h1>
 			<h2>Book your flight tickets with us!</h2><br>	
-			<form  action = "successPage.html" method = "get" target = "_blank">
+			<form  action = "results.html" method = "get" target = "_blank">
 				<!-- One-Way, Two-Way bubble options -->
 				<input type = "radio" name = "ticketType" value = "oneWay" checked>One-Way
 				<input type = "radio" name = "ticketType" value = "twoWay">Two-Way
@@ -64,9 +65,9 @@
 						placeholder = "Joey"></label>
 					<br><br>
 					<label>Phone:<input type = "tel" name = "phoneNumber" 
-						pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder = "123-456-7890"></label>
+						pattern = "[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" placeholder = "123-456-7890"></label>
 					<br><br>
-					<label>Email:<input type = "text" name = "eMail"
+					<label>Email:<input type = "email" name = "eMail"
 						pattern = "[a-z0-9!%&-_+=/.]+@[a-z0-9.-]+.[a-z]{2,4}" placeholder = "email01@email.com"></label>
 					<br><br>
 				</fieldset>
